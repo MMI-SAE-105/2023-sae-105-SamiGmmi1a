@@ -46,5 +46,97 @@ Dubuffet conçoit le peintre comme un passeur, à mi-chemin entre le philosophe 
 
 <button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
 
-<img class="image" src="public/img/article_1/J_D.webp" alt="Jean Dubuffet Autoportrait">
+<img class="image" src="public/img/article_1/J_D_oeuvre_1.webp" alt="Ontogénèse">
 
+
+
+<div x-data="{ open: false }">
+    <button class="btn_ctn" @click="open = ! open">Ontogénèse</button>
+
+        <div
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+        <p class="text_dsc">Jean Dubuffet (français, 1901 - 1985)</p>
+        <p class="text_dsc">Titre : Ontogénèse, 1975</p>
+        <p class="text_dsc">Support : Paint on epoxy resin</p>
+        <p class="text_dsc">Taille : 398.8 x 830.6 x508 cm. (157 x 830.6 x 508 in.)</p>
+    
+    </div>
+    </div>
+
+    <img class="image" src="public/img/article_1/J_D_oeuvre_2.webp" alt="Welcome parade">
+
+    
+    <div x-data="{ open: false }">
+        <button class="btn_ctn" @click="open = ! open">Welcome parade</button>
+    
+            <div
+                x-show="open"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90">
+            <p class="text_dsc">Jean Dubuffet (français, 1901 - 1985)</p>
+            <p class="text_dsc">Titre : Welcome Parade</p>
+            <p class="text_dsc">Support : Paint on epoxy resin</p>
+            <p class="text_dsc">Taille : 398.8 x 830.6 x508 cm. (157 x 830.6 x 508 in.)</p>
+        
+        </div>
+        </div>
+
+
+        <button class="btn"><a href="programme.html">Voir le programme</a></button>
+
+        <hr class="separation">
+
+        <button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
+
+
+        <button class="retour"><a href="index.html"><img src="public/img/icones/back.svg" alt="retour">Retour à l'accueil</a></button>
+
+
+        <div class="contact">
+            <p class="actualite">Pour rester au courant de nos actualités</p>
+        
+            <form class="newsletter" id="validation">
+                <label class="inscription">Nom :</label><input class="zone" id="Nom" required><br>
+        
+                <label class="inscription">E-mail :</label><input class="zone" id="email" required><br>
+        
+                <label class="inscription">Message:</label><input class="zone" id="message" required>
+           
+        
+        <input class="btn" type="submit"  name="Nom=" value="Envoyer">
+        </form>
+        </div>
+        </main>
+        
+        <footer>
+            <div class="social_network">
+                <img src="public/img/icones/facebook.svg" alt="FaceBook">
+                <img src="public/img/icones/YT.svg" alt="Youtube">
+                <img src="public/img/icones/insta.svg" alt="Instagram">
+                <img src="public/img/icones/tweeter.svg" alt="Tweeter">
+            </div>
+        
+        <h3>Contact</h3>
+        
+        <hr class="separation_footer">
+        
+        <p class="footer_text">Fondation Cartier
+            261 Bd Raspail
+            75014 Paris</p>
+        
+        <p class="footer_text">06 XX XX XX XX contact_cartier@gmail.com</p>
+        </footer>
+        
+        
+        </body>
+        </html>
