@@ -121,3 +121,36 @@ blockquote {
 
 /*footer*/
 
+footer {
+    background-color: #161212;
+    padding-bottom: 10rem;
+}
+
+.social_network {
+    
+}
+
+h2 {
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+}
+
+.separation_footer {
+    color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 31rem;
+}
+
+.footer_text {
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    width: 12rem;
+    line-height: 1.3;
+
+}
