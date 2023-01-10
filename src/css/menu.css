@@ -93,4 +93,4 @@
     opacity: 1;
 }
 
-.menu-open .menu li:nth-child(n+1) {transition-delay: ;}
+.menu-open .menu li:nth-child(n+1) {transition-delay: .3s;}
