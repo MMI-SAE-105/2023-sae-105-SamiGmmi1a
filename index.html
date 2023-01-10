@@ -18,12 +18,12 @@
         <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="public/img/icones/icone_menu.svg" alt="menu"></button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Jean Dubuffet</a></li>
-                <li><a href="">Aloïse Corbaz</a></li>
-                <li><a href="">Adolf Wölfli</a></li>
-                <li><a href="">Henry Darger</a></li>
-                <li><a href="">Programme</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="JeanDubuffet.html">Jean Dubuffet</a></li>
+                <li><a href="AloiseCorbaz.html">Aloïse Corbaz</a></li>
+                <li><a href="AdolfWolfli.html">Adolf Wölfli</a></li>
+                <li><a href="HenryDarger.html">Henry Darger</a></li>
+                <li><a href="programme.html">Programme</a></li>
             </ul>
         </nav>
         <img class="header_icone" src="public/img/icones/icone_loupe.svg" alt="rechercher">
@@ -39,11 +39,11 @@
     <p>Horaires d'ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
 
     <img class="image" src="public/img/page_accueil/autoportrait_J_D.webp" alt="Jean Dubuffet Autoportrait">
-    <figure>
-        <figcaption>Jean Dubuffet Autoportrait</figcaption>
-    </figure>
 
-    <button class="btn" href="#">Réservez vos places dès maintenant</button>
+        <p class="legende">Jean Dubuffet Autoportrait</p>
+
+
+    <button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
 
     <p>
         C'est en 1945, après un voyage en Suisse, que <span>Jean Dubuffet</span> emploie ce therme pour la première fois. Il désigne les œuvres réalisées par des marginaux ou des internés d'asile</p>
@@ -62,37 +62,39 @@
     <li>-13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
 </ul>
 
-<button class="btn" href="#">Réservez vos places dès maintenant</button>
+<button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
 
 <hr class="separation">
 
 <H1>Au programme</H1>
 
 
-<img class="article_image" href="#" src="public/img/page_accueil/J_D_ouverture.webp" alt="Programme Jean Dubuffet">
+<a href="JeanDubuffet.html"><img class="article_image" src="public/img/page_accueil/J_D_ouverture.webp" alt="Programme Jean Dubuffet"></a>
+
+    <figure>
+        <figcaption class="article">Jean Dubuffet</figcaption>
+    </figure>
+
+<a href="#"><img class="article_image" src="public/img/page_accueil/A_C_ouverture.webp" alt="Programme Aloïse Corbaz"></a>
+
 
 <figure>
-    <figcaption class="article">Jean Dubuffet</figcaption>
+    <figcaption>Aloïse Corbaz</figcaption>
 </figure>
 
-<img class="article_image" href="#" src="public/img/page_accueil/A_C_ouverture.webp" alt="Programme Jean Dubuffet">
+<a href="#"><img class="article_image" src="public/img/page_accueil/A_W_ouverture.webp" alt="Programme Adolf Wölfli"></a>
 
-<figure>
-    <figcaption class="article">Aloïse Corbaz</figcaption>
-</figure>
-
-<img class="article_image" href="#" src="public/img/page_accueil/A_W_ouverture.webp" alt="Programme Jean Dubuffet">
-<figure>
-    
+<figure>   
     <figcaption class="article">Adolf Wölfli</figcaption>
 </figure>
 
-<img class="article_image" href="#" src="public/img/page_accueil/_D_ouverture.webp" alt="Programme Jean Dubuffet">
-<figure>
-    
+<a href="#"><img class="article_image" src="public/img/page_accueil/H_D_ouverture.webp" alt="Programme Henry Darger"></a>
+
+<figure>    
     <figcaption class="article">Henry Darger</figcaption>
 </figure>
 
+<button class="btn"><a href="#">Voir le programme</a></button>
 
 
 <H1>Notre dernier salon</H1>
@@ -103,6 +105,9 @@
 <blockquote>Le vrai art, il est toujours là où on ne l'attend pas. Là où personne ne pense à lui ni ne prononce son nom.</blockquote>
 
 <hr class="separation">
+
+<button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
+
 
 <div class="contact">
     <p class="actualite">Pour rester au courant de nos actualités</p>
