@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/typography.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body class=" ">
+    <header>
+        <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="public/img/icones/icone_menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="JeanDubuffet.html">Jean Dubuffet</a></li>
+                <li><a href="AloiseCorbaz.html">Aloïse Corbaz</a></li>
+                <li><a href="AdolfWolfli.html">Adolf Wölfli</a></li>
+                <li><a href="HenryDarger.html">Henry Darger</a></li>
+                <li><a href="programme.html">Programme</a></li>
+            </ul>
+        </nav>
+        <img class="header_icone" src="public/img/icones/icone_loupe.svg" alt="rechercher">
+        <img class="header_logo" src="public/img/page_accueil/logo_cartier.webp" alt="Fondation Cartier">
+    </header>
+
+<main>    
+<hr class="separation">
+
+    <H1>Exposition L'art Brut</H1>
+    <p>Dates de l'exposition : du 13 avril au 23 juin 2023</p>
+    <p>Lieu de l'exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+    <p>Horaires d'ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+
+
+    <div class="timeline">
+
+      
+        <div class="container">
+          
+          <div class="lines">
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+          </div>
+          
+          <div class="cards">
+  
+              <div class="card">
+              <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
+              <h4>Exposition :  Adolf Wölfli</h4>
+              <ul>
+                <li class="timeline_li">du 13 avril au 27 avril 2023</li>
+                <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+              </ul>
+              </div>
+
+              <div class="card">
+                <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
+                <h4>Exposition :  Adolf Wölfli</h4>
+                <ul>
+                  <li class="timeline_li">du 13 avril au 27 avril 2023</li>
+                  <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+                </ul>
+                </div>
+
+                <div class="card">
+                    <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
+                    <h4>Exposition :  Adolf Wölfli</h4>
+                    <ul>
+                      <li class="timeline_li">du 13 avril au 27 avril 2023</li>
+                      <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+                    </ul>
+                    </div>
+
+                    <div class="card">
+                        <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
+                        <h4>Exposition :  Adolf Wölfli</h4>
+                        <ul>
+                          <li class="timeline_li">du 13 avril au 27 avril 2023</li>
+                          <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+                        </ul>
+                        </div>
+    
+          </div>
+      </div>
+  </div>
+  
+  
+  <article class="article">
+      <h5 class="heading-5">3 CONSEQUENCES d'un voyage spatial</h5>
+      <img class="image" src="/public/photo/ISS/corps.webp" alt="3 consequences d'un voyage spatial">
+      <span class="btn"><a href="corps.html" >En lire plus...</a></span>
+  </article>
+  
+  <article class="article">
+      <h5 class="heading-5">3 INVENTIONS INCROYABLES de l'ISS</h5>
+      <img class="image" src="/public/photo/ISS/techno.webp" alt="3 INVENTIONS INCROYABLES de l'ISS">
+      <span class="btn"><a href="techno.html" >En lire plus...</a></span>
+  </article>
+  
+  <hr class="separation-bas">
+  </main>
