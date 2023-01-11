@@ -66,7 +66,6 @@ justify-content list-style margin none padding
 .caroussel_liste-liens {
 
     /* aligne horizontalement les enfants */
-    gap: 1rem;
     /* centre horizontalement les enfants */
     text-align: center;
     /* enlève les marges par défaut */
@@ -77,5 +76,8 @@ justify-content list-style margin none padding
     list-style: none;
     /* espace entre les enfants */
     font-family: 'Secular One', sans-serif;
-    color: black;
+  }
+
+  .caroussel_liste-liens a{
+    color: #000;
   }
