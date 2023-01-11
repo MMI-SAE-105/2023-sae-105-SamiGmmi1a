@@ -1,0 +1,38 @@
+/* en vrac :
+100% 100% 100% 0 auto border-box box-sizing 
+display height flex flex none margin 
+max-width width width
+       width: 100%;
+        max-width: 100%;
+*/ 
+* {
+    box-sizing: border-box;
+}
+
+.carrousel {
+    
+    margin-top: 15rem;
+}
+
+.carrousel_img{
+    width: 100%;
+    height: auto;
+    }
+
+.carrousel_parent-ecrans {
+display: flex;
+overflow-x: scroll;
+scroll-behavior: smooth;
+scroll-snap-type: x mandatory ;
+}
+
+    .carrousel_ecran {
+     flex: none;
+    width: 100%;
+    scroll-snap-align: start;
+      /* largeur du parent pour chaque enfant */
+      /* permet de garder toute la largeur du parent */
+    }
+    .carrousel_ecran figure {
+        margin: none;
+    }
