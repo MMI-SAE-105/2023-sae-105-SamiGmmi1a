@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/menu.css">
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/typography.css">
-    <link rel="stylesheet" href="src/css/carrousel.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/typography.css">
+    <link rel="stylesheet" href="/src/css/carrousel.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body class=" ">
     <header>
-        <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="public/img/icones/icone_menu.svg" alt="menu"></button>
+        <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="/public/img/icones/icone_menu.svg" alt="menu"></button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="JeanDubuffet.html">Jean Dubuffet</a></li>
-                <li><a href="AloiseCorbaz.html">Aloïse Corbaz</a></li>
-                <li><a href="AdolfWolfli.html">Adolf Wölfli</a></li>
-                <li><a href="HenryDarger.html">Henry Darger</a></li>
-                <li><a href="programme.html">Programme</a></li>
+                <li class="langue">En/fr</li>
+                <li class="langue"><a href="/en/home.html">En/fr</a></li>
+                <li><a href="/fr/JeanDubuffet.html">Jean Dubuffet</a></li>
+                <li><a href="/fr/AloiseCorbaz.html">Aloïse Corbaz</a></li>
+                <li><a href="/fr/AdolfWolfli.html">Adolf Wölfli</a></li>
+                <li><a href="/fr/HenryDarger.html">Henry Darger</a></li>
+                <li><a href="/fr/programme.html">Programme</a></li>
             </ul>
         </nav>
-        <img class="header_icone" src="public/img/icones/icone_loupe.svg" alt="rechercher">
-        <img class="header_logo" src="public/img/page_accueil/logo_cartier.webp" alt="Fondation Cartier">
+        <img class="header_icone" src="/public/img/icones/icone_loupe.svg" alt="rechercher">
+        <img class="header_logo" src="/public/img/page_accueil/logo_cartier.webp" alt="Fondation Cartier">
     </header>
 
     
@@ -42,36 +43,36 @@
 
         <div id="ecran-1" class="carrousel_ecran">
             <figure class="carrousel_img">
-                <img class="carrousel_img" src="public/img/carrousel/expo_1.webp" alt="image ecran 1">
-                <figcaption>Ecran 1</figcaption>
+                <img class="carrousel_img" src="/public/img/carrousel/expo_1.webp" alt="image ecran 1">
+                <figcaption>2018</figcaption>
             </figure>
         </div>
 
         <div id="ecran-2" class="carrousel_ecran">
             <figure class="carrousel_img">
-                <img class="carrousel_img" src="public/img/carrousel/expo_2.webp" alt="image ecran 2">
-                <figcaption>Ecran 2</figcaption>
+                <img class="carrousel_img" src="/public/img/carrousel/expo_2.webp" alt="image ecran 2">
+                <figcaption>2019</figcaption>
             </figure>
         </div>
         
         <div id="ecran-3" class="carrousel_ecran">
             <figure class="carrousel_img">
-                <img class="carrousel_img" src="public/img/carrousel/expo_3.webp" alt="image ecran 3">
-                <figcaption>Ecran 3</figcaption>
+                <img class="carrousel_img" src="/public/img/carrousel/expo_3.webp" alt="image ecran 3">
+                <figcaption>2020</figcaption>
             </figure>
         </div>
         
         <div id="ecran-4" class="carrousel_ecran">
             <figure class="carrousel_img">
-                <img class="carrousel_img" src="public/img/carrousel/expo_4.webp" alt="image ecran 4">
-                <figcaption>Ecran 4</figcaption>
+                <img class="carrousel_img" src="/public/img/carrousel/expo_4.webp" alt="image ecran 4">
+                <figcaption>2021</figcaption>
             </figure>
         </div>
         
         <div id="ecran-5" class="carrousel_ecran">
             <figure class="carrousel_img">
-                <img class="carrousel_img" src="public/img/carrousel/expo_5.webp" alt="image ecran 5">
-                <figcaption>Ecran 5</figcaption>
+                <img class="carrousel_img" src="/public/img/carrousel/expo_5.webp" alt="image ecran 5">
+                <figcaption>2022</figcaption>
             </figure>
         </div>
     </div>
