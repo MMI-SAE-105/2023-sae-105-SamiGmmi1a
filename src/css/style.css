@@ -28,7 +28,10 @@ button a {
     background-color: #000;
     margin-top: 5rem;
     margin-bottom: 4rem;
-    width: 31rem;
+    width: 80%;
+    display: block;
+    margin: auto;
+
 }
 
 text {  
@@ -42,7 +45,7 @@ H1 {
     margin: auto;
     text-align: center;
     margin-top: 4rem;
-    width: 300px;
+    width: 70%;
     margin-bottom: 5rem;
 }
 
@@ -56,7 +59,7 @@ p {
     font-size: 2rem;
     display: block;
     height: 5rem;
-    width: 25rem;
+    width: 50%;
     margin: auto;
     margin-top: 5rem;
     background-color: #00000000;
@@ -201,10 +204,12 @@ footer {
     padding-bottom: 10rem;
 }
 
-.social_network {
+footer .social_network {
     display: block;
     justify-content: center;
     gap: 1rem;
+    margin-left: 40%;
+    display: flex;
 }
 
 h3 {
@@ -219,7 +224,9 @@ h3 {
     color: #fff;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    width: 31rem;
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 .footer_text {
