@@ -7,7 +7,12 @@
 .header_icone {
     position: absolute;
     margin-top: 3rem;
-    
+}
+
+.langue {
+    position: absolute;
+    top: 5%;
+    left: 70%;
 }
 
 /*body*/
