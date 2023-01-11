@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/typography.css">
+    <link rel="stylesheet" href="src/css/timeline.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
@@ -54,45 +55,119 @@
             <div class="dot"></div>
           </div>
           
-          <div class="cards">
-  
-              <div class="card">
-              <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
-              <h4>Exposition :  Adolf Wölfli</h4>
-              <ul>
-                <li class="timeline_li">du 13 avril au 27 avril 2023</li>
-                <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
-              </ul>
-              </div>
+<div class="cards">
+    
+<!--    
+    
+    <div class="overlay"    
+    x-show="artiste"
+    @click="artiste = null">
+    
+    
+    <figure>
+        <img class=img :src="artiste" alt="image 237... un chiot">
+        <figcaption class="legende">image 237... un chiot</figcaption>
+    </figure>
+</div>
 
-              <div class="card">
-                <img class="timeline_img" src="public/img/frise/A_C_frise.webp" alt="Adolf Wölfli">
-                <h4>Exposition :  Aloïse Corbaz</h4>
-                <ul>
-                  <li class="timeline_li">du 27 avril au 10 mai  2023</li>
-                  <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris</li>
-                </ul>
-                </div>
+<body x-data="{ artiste : 'https://picsum.photos/id/237/200/300'}">
 
-                <div class="card">
-                    <img class="timeline_img" src="public/img/frise/H_D_frise.webp" alt="Adolf Wölfli">
-                    <h4>Exposition :  Henry Darger</h4>
-                    <ul>
-                      <li class="timeline_li">du 11 mai au 30 mai  2023</li>
-                      <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
-                    </ul>
-                    </div>
+        <img src="https://picsum.photos/id/237/20/30" alt="miniature chiot" 
+            @click="artiste = 'https://picsum.photos/id/237/200/300'">
+          
+        <img src="https://picsum.photos/id/236/20/30" alt="miniature maison" 
+            @click="artiste = 'https://picsum.photos/id/236/200/300'">
 
-                    <div class="card">
-                        <img class="timeline_img" src="public/img/frise/J_D_frise.webp" alt="Adolf Wölfli">
-                        <h4>Exposition :  Jean Dubuffet</h4>
-                        <ul>
-                          <li class="timeline_li">du 1er au 23 juin  2023</li>
-                          <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
-                        </ul>
-                        </div>
+
+
+-->
+
+
+    <div class="card">
+        <img class="timeline_img" src="public/img/frise/A_W_frise.webp" alt="Adolf Wölfli">
+        <h4>Exposition :  Adolf Wölfli</h4>
+        <ul>
+        <li class="timeline_li">du 13 avril au 27 avril 2023</li>
+        <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+    <img class="timeline_img" src="public/img/frise/A_C_frise.webp" alt="Aloïse Corbaz">
+    <h4>Exposition :  Aloïse Corbaz</h4>
+    <ul>
+        <li class="timeline_li">du 27 avril au 10 mai  2023</li>
+        <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris</li>
+    </ul>
+    </div>
+
+    <div class="card">
+        <img class="timeline_img" src="public/img/frise/H_D_frise.webp" alt="Henry Darger">
+        <h4>Exposition :  Henry Darger</h4>
+        <ul>
+            <li class="timeline_li">du 11 mai au 30 mai  2023</li>
+            <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <img class="timeline_img" src="public/img/frise/J_D_frise.webp" alt="Jean Dubuffet">
+        <h4>Exposition :  Jean Dubuffet</h4>
+        <ul>
+            <li class="timeline_li">du 1er au 23 juin  2023</li>
+            <li class="timeline_li">Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris.</li>
+        </ul>
+    </div>
     
           </div>
       </div>
   </div>
+
+  <hr class="separation">
+
+<button class="btn"><a href="#">Réservez vos places dès maintenant</a></button>
+
+
+<button class="retour"><a href="index.html"><img src="public/img/icones/back.svg" alt="retour">Retour à l'accueil</a></button>
+
+
+<div class="contact">
+    <p class="actualite">Pour rester au courant de nos actualités</p>
+
+    <form class="newsletter" id="validation">
+        <label class="inscription">Nom :</label><input class="zone" id="Nom" required><br>
+
+        <label class="inscription">E-mail :</label><input class="zone" id="email" required><br>
+
+        <label class="inscription">Message:</label><input class="zone" id="message" required>
+   
+
+<input class="btn" type="submit"  name="Nom=" value="Envoyer">
+</form>
+</div>
+</main>
+
+<footer>
+    <div class="social_network">
+        <img src="public/img/icones/facebook.svg" alt="FaceBook">
+        <img src="public/img/icones/YT.svg" alt="Youtube">
+        <img src="public/img/icones/insta.svg" alt="Instagram">
+        <img src="public/img/icones/tweeter.svg" alt="Tweeter">
+    </div>
+
+<h3>Contact</h3>
+
+<hr class="separation_footer">
+
+<p class="footer_text">Fondation Cartier
+    261 Bd Raspail
+    75014 Paris</p>
+
+<p class="footer_text">06 XX XX XX XX contact_cartier@gmail.com</p>
+</footer>
+
+
+</body>
+</html>
+
   

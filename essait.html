@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/typography.css">
+    <link rel="stylesheet" href="src/css/carrousel.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body class=" ">
+    <header>
+        <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="public/img/icones/icone_menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="JeanDubuffet.html">Jean Dubuffet</a></li>
+                <li><a href="AloiseCorbaz.html">Aloïse Corbaz</a></li>
+                <li><a href="AdolfWolfli.html">Adolf Wölfli</a></li>
+                <li><a href="HenryDarger.html">Henry Darger</a></li>
+                <li><a href="programme.html">Programme</a></li>
+            </ul>
+        </nav>
+        <img class="header_icone" src="public/img/icones/icone_loupe.svg" alt="rechercher">
+        <img class="header_logo" src="public/img/page_accueil/logo_cartier.webp" alt="Fondation Cartier">
+    </header>
+
+<main>    
+<hr class="separation">
+
+<div class="carrousel" x-data="{}">
+    <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+    <div class="carrousel_parent-ecrans">
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure>
+                <img src="public/img/carrousel/expo_1.webp" alt="image ecran 1">
+                <figcaption>Ecran 1</figcaption>
+            </figure>
+        </div>
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <img src="public/img/carrousel/expo_2.webp" alt="image ecran 2">
+                <figcaption>Ecran 2</figcaption>
+            </figure>
+        </div>
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <img src="public/img/carrousel/expo_3.webp" alt="image ecran 3">
+                <figcaption>Ecran 3</figcaption>
+            </figure>
+        </div>
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <img src="public/img/carrousel/expo_4.webp" alt="image ecran 4">
+                <figcaption>Ecran 4</figcaption>
+            </figure>
+        </div>
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure>
+                <img src="public/img/carrousel/expo_5.webp" alt="image ecran 5">
+                <figcaption>Ecran 5</figcaption>
+            </figure>
+        </div>
+    </div>
+    
+    <ul class="caroussel_liste-liens">
+        <li><a href="#ecran-1" class="caroussel_lien">ecran 1</a></li>
+        <li><a href="#ecran-2" class="caroussel_lien">ecran 2</a></li>
+        <li><a href="#ecran-3" class="caroussel_lien">ecran 3</a></li>
+        <li><a href="#ecran-4" class="caroussel_lien">ecran 4</a></li>
+        <li><a href="#ecran-5" class="caroussel_lien">ecran 5</a></li>
+    </ul>
+</div>
+
+
+

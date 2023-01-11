@@ -17,6 +17,7 @@
     place-content: center;
     background-color: #161212;
     justify-content: center;
+    z-index: 2;
 }
 
 .noscroll,

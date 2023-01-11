@@ -1,0 +1,56 @@
+.timeline{
+    width: 100%;
+    mix-blend-mode: normal;
+    display: block;
+}
+  
+.container{
+    width:100%;
+    display:flex;
+    margin-top: 6rem;
+}
+
+.lines {
+    margin-left: 2rem;
+    margin-top: 10rem;
+}        
+    
+.dot{
+width:15px;
+height: 15px;
+background: #161212;
+border-radius:7px;
+margin-left: 4.4rem;
+}
+    
+.line{
+height: 38rem;
+width: 3px;
+background: #161212;
+margin-left: 5rem;
+}
+
+.cards {
+    display: block;
+    width: 20rem;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 4rem;
+}
+
+.cards h4 {
+    font-size: 2rem;
+    margin-bottom: -.2rem;
+    margin-left: 4rem;
+}
+
+.cards ul {
+    margin-bottom: 4rem;
+}
+
+.cards .timeline_img {
+    display: block;
+    height: 21.5rem;
+    width: 17rem;
+    margin: auto;
+}
