@@ -10,14 +10,13 @@ max-width width width
 }
 
 .carrousel {
-    
-    margin-top: 15rem;
+    position: relative;
 }
 
 .carrousel_img{
     width: 100%;
     height: auto;
-    }
+}
 
 .carrousel_parent-ecrans {
 display: flex;
@@ -26,13 +25,57 @@ scroll-behavior: smooth;
 scroll-snap-type: x mandatory ;
 }
 
-    .carrousel_ecran {
-     flex: none;
-    width: 100%;
-    scroll-snap-align: start;
-      /* largeur du parent pour chaque enfant */
-      /* permet de garder toute la largeur du parent */
-    }
-    .carrousel_ecran figure {
-        margin: none;
-    }
+.carrousel_ecran {
+    flex: none;
+width: 100%;
+scroll-snap-align: start;
+
+}
+.carrousel_ecran figure {
+    margin: 0;
+}
+
+.carrousel_btn {
+    position: absolute;
+    margin: 2rem;
+    height: 3rem;
+    width: 3rem;
+    margin-top: calc(50% + 2rem);
+    top: -50%; /* centre verticalement */
+    background-color: #00000000;
+    border-radius: 50%;
+    border: #fff solid 4px;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    border-width: .3rem;
+}
+
+.carrousel_btn-avant {
+left: 0;
+}
+
+.carrousel_btn-apres {
+right: 0;
+}
+
+/* en vrac :
+0 0 1rem display center flex gap 
+justify-content list-style margin none padding
+*/
+.caroussel_liste-liens {
+
+    /* aligne horizontalement les enfants */
+    gap: 1rem;
+    /* centre horizontalement les enfants */
+    text-align: center;
+    /* enlève les marges par défaut */
+    margin: none;
+    /* enlève les padding par défaut */
+    padding: none;
+    /* enlève les puces par défaut */
+    list-style: none;
+    /* espace entre les enfants */
+    font-family: 'Secular One', sans-serif;
+    color: black;
+  }
