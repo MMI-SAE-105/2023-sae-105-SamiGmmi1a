@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adolf Wolifi</title>
+
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/typography.css">
+    <link rel="stylesheet" href="/src/css/carrousel.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body class=" ">
+    <header>
+        <button class="menu_btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"><img src="/public/img/icones/icone_menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li class="langue">En/fr</li>
+                <li class="langue"><a href="/en/index.html">En/fr</a></li>
+                <li><a href="/fr/index.html">index</a></li>
+                <li><a href="/fr/JeanDubuffet.html">Jean Dubuffet</a></li>
+                <li><a href="/fr/AloiseCorbaz.html">Aloïse Corbaz</a></li>
+                <li><a href="/fr/AdolfWolfli.html">Adolf Wölfli</a></li>
+                <li><a href="/fr/HenryDarger.html">Henry Darger</a></li>
+                <li><a href="/fr/programme.html">Programme</a></li>
+            </ul>
+        </nav>
+        <img class="header_icone" src="/public/img/icones/icone_loupe.svg" alt="rechercher">
+        <img class="header_logo" src="/public/img/page_accueil/logo_cartier.webp" alt="Fondation Cartier">
+    </header>
+
+<main>    
+<hr class="separation">
+
+    <H1>Exposition L'art Brut</H1>
+
+    
