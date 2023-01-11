@@ -79,9 +79,7 @@ span  {
     top: -15rem;
     padding: 10px 50px;
     margin-left: 0;
-
 }
-
 
 .info {
     margin: 30px;
@@ -92,15 +90,18 @@ span  {
     font-family: 'Secular One', sans-serif;
     font-size: 2rem;
     display: block;
-    height: 7rem;
-    width: 24rem;
+    height: 5rem;
+    width: 25rem;
     margin: auto;
     margin-top: 5rem;
     background-color: #00000000;
-    border-color: #000;
+    border: #000 solid 2px;
     padding: 1rem;
     margin-bottom: 6rem;
+    color: #000;
+    text-align: center;
 }
+
 
 
 blockquote {
