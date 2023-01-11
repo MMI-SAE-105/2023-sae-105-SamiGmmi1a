@@ -34,41 +34,42 @@
 <main>    
 <hr class="separation">
 
-    <H1>Exposition L'art Brut</H1>
-    <p>Dates de l'exposition : du 13 avril au 23 juin 2023</p>
-    <p>Lieu de l'exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
-    <p>Horaires d'ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+    <H1>Art Brut exhibition</H1>
+    <p>Exhibition dates: April 13 to June 23, 2023</p>
+    <p>Place of the exhibition: Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+    <p>Opening hours: Every day from 11 a.m. to 8 p.m., except Monday. Nocturne on Tuesday, until 10 p.m. The closing of the rooms begins at 7:45 p.m. (9:45 p.m. on Tuesdays).</p>
 
     <img class="image" src="/public/img/page_accueil/autoportrait_J_D.webp" alt="Jean Dubuffet Autoportrait">
 
-        <p class="legende">Jean Dubuffet Autoportrait</p>
+        <p class="legende">
+            Jean Dubuffet Self-Portrait</p>
 
 
-    <a class="btn" href="#">Réservez vos places dès maintenant</a>
+    <a class="btn" href="#">Book your place now
+    </a>
 
     <p>
-        C'est en 1945, après un voyage en Suisse, que <span>Jean Dubuffet</span> emploie ce therme pour la première fois. Il désigne les œuvres réalisées par des marginaux ou des internés d'asile</p>
-        <p>Les œuvres <span>d'Art Brut</span> sont réalisées par des créateurs autodidactes, des marginaux retranchés dans une position <span>d'esprit rebelle</span> ou imperméables aux normes et valeurs collectives. Ils conçoivent un univers à leur propre usage sans ne se préoccuper ni de la critique du public ni du regard d'autrui, de la reconnaissance ou d'une quelconque approbation.
-    </p>
+        It was in 1945, after a trip to Switzerland, that <span>Jean Dubuffet</span> used this thermal bath for the first time. It designates the works produced by marginalized or interned asylum</p>
+        <p>The <span>Art Brut</span> works are made by self-taught creators, marginalized entrenched in a position of <span>rebellious spirit</span> or impervious to collective norms and values. They design a universe for their own use without worrying about public criticism or the gaze of others, recognition or any kind of approval.
+
 
 <hr class="separation">
 
-<H1>L'exposition</H1>
+<H1>The exhibition</H1>
 
 <ul class="info">
-    <li>Normal : 11€</li>
-    <li>Réduit : 7,50€</li>
-    <li>13 - 25 ans : 5€</li>
-    <li>Fondation Cartier Pass : 18€ - 50€</li>
-    <li>-13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
+    <li>Regular: €11</li>
+    <li>Reduced: €7.50</li>
+    <li>13 - 25 years old: €5</li>
+    <li>Cartier Foundation Pass: €18 - €50</li>
+    <li>-13 years old, Annual pass, Icom card, press card, disability card, Fondation Cartier Pass, Students: Free</li>
 </ul>
-
 <a class="btn" href="#">Réservez vos places dès maintenant</a>
 
 
 <hr class="separation">
 
-<H1>Au programme</H1>
+<H1>On the program</H1>
 
 
 <a href="JeanDubuffet.html"><img class="article_image" src="/public/img/page_accueil/J_D_ouverture.webp" alt="Programme Jean Dubuffet"></a>
@@ -96,26 +97,72 @@
     <figcaption class="article">Henry Darger</figcaption>
 </figure>
 
-<a class="btn" href="/fr/programme.html">Voir le programme</a>
+<a class="btn" href="/fr/programme.html">See the program
+</a>
 
 
-<H1>Notre dernier salon</H1>
-
-
-
-
-<blockquote>Le vrai art, il est toujours là où on ne l'attend pas. Là où personne ne pense à lui ni ne prononce son nom.</blockquote>
+<H1>Our last show</H1>
 
 <hr class="separation">
 
-<a class="btn" href="#">Réservez vos places dès maintenant</a>
+<div class="carrousel" x-data="{  }">
+    <button  @click= "$refs.parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button  @click="$refs.parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+    <div class="carrousel_parent-ecrans" x-ref="parent">
+
+
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_1.webp" alt="image ecran 1">
+
+            </figure>
+        </div>
+
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_2.webp" alt="image ecran 2">
+            </figure>
+        </div>
+        
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_3.webp" alt="image ecran 3">
+            </figure>
+        </div>
+        
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_4.webp" alt="image ecran 4">
+            </figure>
+        </div>
+        
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_5.webp" alt="image ecran 5">
+            </figure>
+        </div>
+    </div>
+    
+    <ul class="caroussel_liste-liens">
+        <li class="lien_carrousel"><a href="#ecran-1" class="caroussel_lien">2018</a></li>
+        <li class="lien_carrousel"><a href="#ecran-2" class="caroussel_lien">2019</a></li>
+        <li class="lien_carrousel"><a href="#ecran-3" class="caroussel_lien">2020</a></li>
+        <li class="lien_carrousel"><a href="#ecran-4" class="caroussel_lien">2021</a></li>
+        <li class="lien_carrousel"><a href="#ecran-5" class="caroussel_lien">2022</a></li>
+    </ul>
+</div>
+
+
+<blockquote>True art is always where you least expect it. Where no one thinks of him or says his name.</blockquote>
+<hr class="separation">
+
+<a class="btn" href="#">Book your seats now</a>
 
 
 <div class="contact">
-    <p class="actualite">Pour rester au courant de nos actualités</p>
+    <p class="news">To stay up to date with our news</p>
 
     <form class="newsletter" id="validation">
-        <label class="inscription">Nom :</label><input class="zone" id="Nom" required><br>
+        <label class="inscription">Name :</label><input class="zone" id="Nom" required><br>
 
         <label class="inscription">E-mail :</label><input class="zone" id="email" required><br>
 
