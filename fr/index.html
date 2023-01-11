@@ -101,6 +101,53 @@
 
 <H1>Notre dernier salon</H1>
 
+<hr class="separation">
+
+<div class="carrousel" x-data="{  }">
+    <button  @click= "$refs.parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button  @click="$refs.parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+    <div class="carrousel_parent-ecrans" x-ref="parent">
+
+
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_1.webp" alt="image ecran 1">
+
+            </figure>
+        </div>
+
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_2.webp" alt="image ecran 2">
+            </figure>
+        </div>
+        
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_3.webp" alt="image ecran 3">
+            </figure>
+        </div>
+        
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_4.webp" alt="image ecran 4">
+            </figure>
+        </div>
+        
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure class="carrousel_img">
+                <img class="carrousel_img" src="/public/img/carrousel/expo_5.webp" alt="image ecran 5">
+            </figure>
+        </div>
+    </div>
+    
+    <ul class="caroussel_liste-liens">
+        <li class="lien_carrousel"><a href="#ecran-1" class="caroussel_lien">2018</a></li>
+        <li class="lien_carrousel"><a href="#ecran-2" class="caroussel_lien">2019</a></li>
+        <li class="lien_carrousel"><a href="#ecran-3" class="caroussel_lien">2020</a></li>
+        <li class="lien_carrousel"><a href="#ecran-4" class="caroussel_lien">2021</a></li>
+        <li class="lien_carrousel"><a href="#ecran-5" class="caroussel_lien">2022</a></li>
+    </ul>
+</div>
 
 
 
